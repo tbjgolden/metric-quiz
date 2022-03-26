@@ -25,7 +25,7 @@ export const Question = ({
             class="answer"
             onClick={(ev) => {
               if (i === correct) {
-                window.location.href = `./${nextId}`;
+                window.location.href = `../${nextId}/`;
               } else {
                 ev.target.style.border = "1px solid red";
                 ev.target.style.background = "#733";
@@ -53,7 +53,7 @@ export const Question = ({
             };
 
             if (isCorrect(text)) {
-              window.location.href = `./${nextId}`;
+              window.location.href = `../${nextId}/`;
             } else {
               const el: HTMLDivElement = document.querySelector(".guess");
               el.style.border = "1px solid red";
