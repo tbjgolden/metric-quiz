@@ -1,0 +1,19 @@
+{
+  "name": "@example/starter",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "astro": "^0.24.3"
+  },
+  "dependencies": {
+    "dedent": "^0.7.0",
+    "react-confetti": "^6.0.1",
+    "react-use": "^17.3.2"
+  }
+}

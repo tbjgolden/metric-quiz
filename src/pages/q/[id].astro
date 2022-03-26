@@ -1,0 +1,38 @@
+---
+import { Markdown } from 'astro/components';
+import '../../styles/global.css';
+import Layout from '../../components/Layout.astro';
+import {Question} from '../../components/Question.tsx';
+import {QUESTION_DATA} from "../../data"
+const { id } = Astro.request.params;
+
+const qNumber = QUESTION_DATA.findIndex(pair => pair[0] === id) + 1
+const {
+  markdown,
+  question,
+  answers,
+  keepCase,
+  correct
+} = QUESTION_DATA[qNumber - 1][1]
+const isOnLast = qNumber >= QUESTION_DATA.length
+const nextId = isOnLast ? "fdb994c7" : QUESTION_DATA[qNumber][0]
+
+export async function getStaticPaths() {
+  return QUESTION_DATA.map(([id]) => ({ params: { id } }))
+}
+---
+<Layout>
+  <p>({qNumber})</p>
+  <Markdown content={markdown} />
+  <div style="padding:24px 0 32px">
+  <hr />
+  </div>
+  <Question
+    client:load
+    question={question}
+    answers={answers}
+    correct={correct}
+    keepCase={keepCase ?? true}
+    nextId={nextId}
+  />
+</Layout>
