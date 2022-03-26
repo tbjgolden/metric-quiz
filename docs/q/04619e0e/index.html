@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Metric Quiz</title>
+<link rel="stylesheet" href="/metric-quiz/assets/_id_.07d5b220.css"></link>
+<link rel="stylesheet" href="/metric-quiz/assets/Layout.3a51ad48.css"></link><style astro-style="true">astro-root, astro-fragment { display: contents; }</style><script type="module" data-astro-component-hydration astro-script="/q/04619e0e//script-0">import setup from '../../load.15b46e5f.js';
+setup("2LsgG", {name:"Question",value: true}, async () => {
+  const [{ Question: Component }, { default: hydrate }] = await Promise.all([import("../../Question.a400c3c6.js"), import("../../client.48334c99.js")]);
+  return (el, children) => hydrate(el)(Component, {"question":"Approximate how long a marathon is in kilometres. Assume a marathon is exactly 26 miles.","answers":undefined,"correct":(str) => {
+        const n = parseInt(str.replace(/ +/g, "").replace(/k(ilo)g(metre)s?$/, ""));
+        return 40 <= n && n <= 45;
+      },"keepCase":true,"nextId":"9cb56c6a"}, children);
+
+});
+</script>
+</head>
+<body>
+  <main>
+    <p>(10)</p><h1 id="long-distances">long distances</h1>
+<p>Miles are used for road signs in the US, UK and most Caribbean islands.</p>
+<p>Everywhere else uses kilometres.</p>
+<h2 id="how-to-convert">How to convert</h2>
+<ul>
+<li>5 miles ≈ 8 kilometres
+<ul>
+<li>which also means 50 miles per hour = 80 kilometres per hour</li>
+</ul>
+</li>
+<li>1 mile ≈ 1.6 kilometres</li>
+</ul>
+<hr>
+<h2 id="fuel-efficiency">Fuel efficiency</h2>
+<p>In the UK and US, it is measured in miles per gallon (mpg). The UK and US gallons are different sizes, which is another reason the imperial system should be killed.</p>
+<p>Fuel efficiency of vehicles in metric countries is often measured in litres per 100 kilometres (L/100km).</p>
+<p>Note that this unit is inverted; it measures the fuel burn per distance, instead of the distance per fuel burn. This means lower is better.</p>
+<div style="padding:24px 0 32px">
+  <hr>
+  </div><astro-root uid="2LsgG"><div><h3>Approximate how long a marathon is in kilometres. Assume a marathon is exactly 26 miles.</h3><form><input type="text" class="guess" value=""/><button type="submit" class="guess-submit">Guess</button></form></div></astro-root>
+  </main>
+</body></html>

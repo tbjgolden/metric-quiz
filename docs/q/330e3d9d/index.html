@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Metric Quiz</title>
+<link rel="stylesheet" href="/metric-quiz/assets/_id_.07d5b220.css"></link>
+<link rel="stylesheet" href="/metric-quiz/assets/Layout.3a51ad48.css"></link><style astro-style="true">astro-root, astro-fragment { display: contents; }</style><script type="module" data-astro-component-hydration astro-script="/q/330e3d9d//script-0">import setup from '../../load.15b46e5f.js';
+setup("b1PX1", {name:"Question",value: true}, async () => {
+  const [{ Question: Component }, { default: hydrate }] = await Promise.all([import("../../Question.a400c3c6.js"), import("../../client.48334c99.js")]);
+  return (el, children) => hydrate(el)(Component, {"question":"DVDs have a diameter of 0.12m. If you asked a metric user to measure one, what would their response most likely be?","answers":undefined,"correct":(str) => {
+        const s = str.replace(/ +/g, "");
+        return s === "12cm" || s === "12centimetres" || s === "twelvecentimetres";
+      },"keepCase":true,"nextId":"d0611baa"}, children);
+
+});
+</script>
+</head>
+<body>
+  <main>
+    <p>(4)</p><h1 id="the-useful-stuff-you-dont-know">the useful stuff you don’t know</h1>
+<pre class="language-null"><code is:raw="" class="language-null">kilo = k = 1,000
+               1
+               0.001 = m = milli</code></pre>
+<p>Looking at these units, it sure would be convenient to have some smaller jumps!</p>
+<p>A normal size ruler could be described as 300 millimetres (mm) long, or 0.3 metres (m) long.</p>
+<p>But for some reason, humans gravitate towards a unit closer to the scale, and so more decimal
+units fill in these gaps.</p>
+<pre class="language-null"><code is:raw="" class="language-null">kilo = k = 1,000
+------------------------------------------
+ ??? = ? =   100
+ ??? = ? =    10
+               1
+               0.1   = d = deci
+               0.01  = c = centi
+------------------------------------------
+               0.001 = m = milli</code></pre>
+<p>The question marks are because the prefixes for 10 and 100 are so rare I had to learn them for this!</p>
+<p>People clearly prefer to say “10 metres” than “1 <em>decametre</em>”, and “100 metres” than “1 <em>hectometre</em>“.</p>
+<p>However, <strong>deci</strong> and <strong>centi</strong> are quite common.</p>
+<p>Notably:</p>
+<ul>
+<li>short lengths that might be measured in inches in imperial are primarily measured in centimetres</li>
+<li>some bottles of wine give their volume in centilitres</li>
+<li>1 centimetre is equivalent to a 1 percent of a metre</li>
+<li>decibels are 1 tenth of a “bel” (who knew?)</li>
+</ul>
+<div style="padding:24px 0 32px">
+  <hr>
+  </div><astro-root uid="b1PX1"><div><h3>DVDs have a diameter of 0.12m. If you asked a metric user to measure one, what would their response most likely be?</h3><form><input type="text" class="guess" value=""/><button type="submit" class="guess-submit">Guess</button></form></div></astro-root>
+  </main>
+</body></html>

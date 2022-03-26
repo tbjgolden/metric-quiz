@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Metric Quiz</title>
+<link rel="stylesheet" href="/metric-quiz/assets/_id_.07d5b220.css"></link>
+<link rel="stylesheet" href="/metric-quiz/assets/Layout.3a51ad48.css"></link><style astro-style="true">astro-root, astro-fragment { display: contents; }</style><script type="module" data-astro-component-hydration astro-script="/q/1b3632f1//script-0">import setup from '../../load.15b46e5f.js';
+setup("ZUCVaj", {name:"Question",value: true}, async () => {
+  const [{ Question: Component }, { default: hydrate }] = await Promise.all([import("../../Question.a400c3c6.js"), import("../../client.48334c99.js")]);
+  return (el, children) => hydrate(el)(Component, {"question":"What's 64kg in pounds? (Use the mnemonic from earlier!)","answers":undefined,"correct":(str) => {
+        const n = parseInt(str.replace(/ +/g, "").replace(/lbs?|pounds?$/, ""));
+        return n === 140;
+      },"keepCase":true,"nextId":"29d03fb2"}, children);
+
+});
+</script>
+</head>
+<body>
+  <main>
+    <p>(8)</p><blockquote>
+<p>Explanation:</p>
+<p><strong>How much heavier (in kg) is a 200 lb person than a 10 stone person?</strong></p>
+<p><strong>(Step 1, stones to pounds)</strong><br>
+10st = 140lb</p>
+<p><strong>(Fast approximation method)</strong><br>
+200lb - 140lb = 60lb ≈ 30kg</p>
+<p><strong>(Closer approximation method)</strong><br>
+200lb - 140lb = 60lb ≈ (30kg - 10%) = 27kg</p>
+<p><strong>(Comparing full human weights)</strong><br>
+200lb ≈ (100kg - 10%) = 90kg<br>
+140lb ≈ (70kg - 10%) = 63kg<br>
+90kg - 63kg = 27kg</p>
+<p>Real answer: 27.2kg</p>
+</blockquote>
+<div style="padding:24px 0 32px">
+  <hr>
+  </div><astro-root uid="ZUCVaj"><div><h3>What&#x27;s 64kg in pounds? (Use the mnemonic from earlier!)</h3><form><input type="text" class="guess" value=""/><button type="submit" class="guess-submit">Guess</button></form></div></astro-root>
+  </main>
+</body></html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Metric Quiz</title>
+<link rel="stylesheet" href="/metric-quiz/assets/Layout.3a51ad48.css"></link>
+<link rel="stylesheet" href="/metric-quiz/assets/_id_.07d5b220.css"></link><style astro-style="true">astro-root, astro-fragment { display: contents; }</style><script type="module" data-astro-component-hydration astro-script="/q/e504344b//script-0">import setup from '../../load.15b46e5f.js';
+setup("1W8Gdk", {name:"Question",value: true}, async () => {
+  const [{ Question: Component }, { default: hydrate }] = await Promise.all([import("../../Question.a400c3c6.js"), import("../../client.48334c99.js")]);
+  return (el, children) => hydrate(el)(Component, {"question":"How much heavier (in kg) is a 200 lb person than a 10 stone person? (aim for a quick approximation, accepted if close enough)","answers":undefined,"correct":(str) => {
+        const n = parseInt(str.replace(/ +/g, "").replace(/k(ilo)g(ram)s?$/, ""));
+        return 25 <= n && n <= 30;
+      },"keepCase":true,"nextId":"1b3632f1"}, children);
+
+});
+</script>
+</head>
+<body>
+  <main>
+    <p>(7)</p><h1 id="human-weights">human weights</h1>
+<p>In metric countries, metric weights are always given in kilograms.</p>
+<p>Imperial is far more confusing:</p>
+<ul>
+<li>In the US, pounds (lb) are used to measure a person’s weight.</li>
+<li>In the UK, there are two primary units:
+<ul>
+<li>stone and pounds (st lb); 1 stone (st) is 14 pounds (lb)</li>
+<li>kilograms</li>
+</ul>
+</li>
+</ul>
+<h2 id="weights-in-kilograms">Weights in kilograms</h2>
+<p>Different countries have VERY different average weights. The average for Bangladeshi women is 50kg (110lb), whereas the average for Tongan women is almost double: 98kg (215lb).</p>
+<p>The vast majority of people worldwide weigh between 50kg and 100kg.</p>
+<p>Good reference points for converting weights are:</p>
+<ul>
+<li><strong>50kg</strong> is 110lb</li>
+<li><strong>75kg</strong> is 165lb<br>
+(mnemonic: [7][5] = [1 + 6][5])</li>
+<li><strong>100kg</strong> is 220lb</li>
+<li>10st = 140lb ≈ <strong>64kg</strong><br>
+(mnemonic: one thought he [140] ate [8] too [2] little ~> 140:8² ~> 140:64)</li>
+</ul>
+<p>Kilograms to pounds isn’t too hard:</p>
+<ul>
+<li><strong>10kg ≈ 22lb</strong></li>
+<li><strong>5kg ≈ 11lb</strong></li>
+<li>general pattern: double it, then add 10% to the result
+<ul>
+<li>double 10kg: (10 + 10) = 20</li>
+<li>add 10%: (20 + 10%) ≈ 22lb</li>
+</ul>
+</li>
+</ul>
+<p>Pounds to kilograms is a bit trickier:</p>
+<ul>
+<li><strong>20lb ≈ 9kg</strong></li>
+<li>general pattern: half it, then subtract 10% from the result
+<ul>
+<li>half 20lb: (20 ÷ 2) = 10</li>
+<li>subtract 10%: (10 - 10%) ≈ 9kg</li>
+</ul>
+</li>
+</ul>
+<hr>
+<blockquote>
+<p>Before continuing, spend some time absorbing these conversions to memory!</p>
+<p><img src="https://c.tenor.com/FU4YSSfJG0QAAAAC/spongebob-squarepants.gif" alt=""></p>
+</blockquote>
+<div style="padding:24px 0 32px">
+  <hr>
+  </div><astro-root uid="1W8Gdk"><div><h3>How much heavier (in kg) is a 200 lb person than a 10 stone person? (aim for a quick approximation, accepted if close enough)</h3><form><input type="text" class="guess" value=""/><button type="submit" class="guess-submit">Guess</button></form></div></astro-root>
+  </main>
+</body></html>

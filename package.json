@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "dedent": "^0.7.0",
-    "react-confetti": "^6.0.1",
-    "react-use": "^17.3.2"
+    "react-confetti": "^6.0.1"
   }
 }
