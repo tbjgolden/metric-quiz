@@ -377,7 +377,7 @@ export const QUESTION_DATA: [
           - double: (10 + 10) = 20
           - add 30: (20 + 30) ≈ 50°F
 
-      Pounds to kilograms is a bit trickier:
+      Fahrenheit to Celsius is a bit trickier:
       
       - approximation: **subtract 30, then halve it**
         - example, convert 50°F to °C
